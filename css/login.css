@@ -43,7 +43,7 @@ body{
     border-radius: 20px;
 }
 
-#submit{
+button{
     padding: 12px 30px;
     width: 40%;
     margin-top: 40px;
@@ -54,7 +54,7 @@ body{
     outline: none;
     border-radius: 20px;
 }
-#submit:hover{
+button:hover{
     cursor: pointer;
     background-color: brown;
 }

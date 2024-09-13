@@ -24,19 +24,32 @@ function resultFunction(event) {
     event.preventDefault();
 
     // Get the values from the input fields
-    var username = document.getElementById("input1").value;
-    var password = document.getElementById("input2").value;
+    var username = document.getElementById("input1")
+    var password = document.getElementById("input2")
+
+    let usernameValue = username.value
+    let passwordValue = password.value
+
+
 
     // Log the username and password to the console
-    console.log("UserName: " + username);
-    console.log("Password: " + password);
+    console.log({"UserName: " : usernameValue});
+    console.log({"Password: " : passwordValue});
     if(username.length < 2){
         alert(`UserName must be above 5 charters`)
     }
     else if(password.length < 8){
         alert(`passwort must be 8 charters`)
     } else{
-        alert(`UserName : ${username}\n  Password: ${password}\n Successfull.`)
+        
+        alert(` Successfull.`)
+
     }
+
+    // UserName : ${username}\n  Password: ${password}\
+
+    username.value = ''
+    password.value=''
+
     
 }
